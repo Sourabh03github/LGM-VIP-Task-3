@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #4F545F;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    color: white;
+    background-color: #55B3C5;
+    text-align: center;
+}
+
+fieldset {
+    margin: 20px;
+    padding: 20px;
+    /*border : 10px solid #dddddd;*/
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #DDD;
+}
+
+
+/*
+fieldset div{
+    background-color: red;
+}
+*/
+
+.info {
+    background-color: #CCE9F8;
+    border: 1px solid #6278B0;
+    color: #42579C;
+    padding: 20px 40px;
+    display: block;
+}
+
+.formElement {
+    width: 200px;
+    padding: 5px 10px;
+}
+
+
+/* No deberíamos utilizar id's */
+
+.buttonHover {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    margin-left: 20px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.buttonHover:hover {
+    cursor: pointer;
+}
+
+.submitButton {
+    background-color: #56C56F;
+}
+
+.submitButton:hover {
+    background-color: rgb(61, 158, 84);
+}
+
+.cancelButton {
+    background-color: #D9534F;
+}
+
+.cancelButton:hover {
+    background-color: rgb(185, 62, 58);
+}
+
+
+/* Flexbox */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    list-style: none;
+    margin: 0;
+    background-color: #CCC;
+}
+
+.menuButton {
+    margin: 0 15px;
+    padding: 20px;
+}
+
+.menuButton:hover {
+    background-color: #999;
+    color: white;
+    cursor: pointer;
+}
+
+.azul {
+    background-color: blue;
+}

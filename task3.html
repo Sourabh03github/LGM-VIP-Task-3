@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Mi primer página web
+    </title>
+    <link href="./css/index.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            Título Principal
+        </h1>
+    </header>
+    <h2>
+        Subtítulo
+    </h2>
+    <p>
+        Aquí va un párrafo
+    </p>
+    <div>
+        <select>
+                <option value="MX" >
+                    México
+                </option>
+                <option value="FR">
+                    Francia
+                </option>
+            </select>
+    </div>
+    <div id="imagen_local">
+        <img src="./img/carro.jpeg" alt="Es una imagen de un honda" />
+    </div>
+    <section class="seccionUno">
+        <ul id="numeros">
+            <li class="num" onclick="eliminaLista(this)">
+                Uno
+            </li>
+            <li class="num" onclick="eliminaLista(this)">
+                Dos
+            </li>
+        </ul>
+    </section>
+    <section class="seccionDos">
+        <ol class="grupo1">
+            <li onclick="eliminaLista(this)">
+                Uno
+            </li>
+            <li onclick="eliminaLista(this)">
+                Dos
+            </li>
+        </ol>
+    </section>
+    <main>
+        <form>
+            <fieldset>
+                <legend>
+                    Título del formulario
+                </legend>
+
+                <div class="grupo1">
+                    <label for="nombre">
+                            Nombre: 
+                        </label>
+                    <input id="nombre" type="text" placeholder="Tu nombre" />
+                </div>
+                <div>
+                    <label for="edad">
+                            Edad: 
+                        </label>
+                    <input id="edad" type="number" />
+                </div>
+                <div>
+                    <label for="password">
+                            Password: 
+                        </label>
+                    <input id="password" type="password" />
+                </div>
+                <h4>
+                    Género
+                </h4>
+                <div>
+                    <input type="radio" id="masculino" name="genero" value="M" />
+                    <label for="masculino">
+                            Masculino
+                        </label>
+                </div>
+                <div>
+                    <input type="radio" id="femenino" name="genero" value="F" />
+                    <label for="femenino">
+                            Femenino
+                        </label>
+                </div>
+                <h4>
+                    Habilidades
+                </h4>
+                <div>
+                    <input type="checkbox" id="excel" name="habilidades" value="EX" class="habilidad" />
+                    <label for="excel">
+                            Excel
+                        </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cpp" name="habilidades" value="CPP" class="habilidad" />
+                    <label for="cpp">
+                            C ++
+                        </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="basesDeDatos" name="habilidades" value="BD" class="habilidad" />
+                    <label for="basesDeDatos">
+                            Bases de Datos
+                        </label>
+                </div>
+                <div>
+                    <label for="fecha">
+                            Escoge una fecha
+                        </label>
+                    <input id="fecha" type="date" />
+                </div>
+                <!--
+                    <div>
+                        <label for="submitButton">
+                            <input type="submit" id="submitButton" value="Enviar" />
+                        </label>
+                    </div> 
+                    -->
+                <h4>Déjanos una reseña</h4>
+                <textarea id="resenia" placeholder="Deja tu reseña aquí..."></textarea>
+                <div>
+                    <button id="submitButton" type="submit">
+                            Aceptar
+                        </button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <div>
+        <a href="./pages/registryForm.html" target="_blank">
+                Registry Form
+            </a>
+    </div>
+    <table>
+        <tr>
+            <th>
+                Columna 1
+            </th>
+            <th>
+                Columna 2
+            </th>
+            <th>
+                Columna 3
+            </th>
+        </tr>
+        <tr>
+            <td>
+                1.1
+            </td>
+            <td>
+                1.2
+            </td>
+            <td>
+                1.3
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2.1
+            </td>
+            <td>
+                2.2
+            </td>
+            <td>
+                2.3
+            </td>
+        </tr>
+    </table>
+    <footer>
+        Aquí va el footer
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
